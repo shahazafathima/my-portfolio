@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahaza Fathima | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <script defer src="script.js"></script>
+
+</head> 
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <h2 class="logo">Shahaza Fathima</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="social-icons">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </nav>
+
+
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero">
+    <div class="content">
+      <h2 class="fade-in">Hello, I'm</h2>
+      <h1 class="typing-text">Shahaza Fathima</h1>
+      <p class="fade-in">Aspiring Software Developer & Web Developer from Kerala, India.</p>
+      <p class="fade-in">Passionate about coding, creative projects, and continuous learning.</p>
+      <div class="cta-group">
+        <a href="#about" class="btn fade-in">Know More</a>
+
+        <!-- Down Arrow -->
+        <div class="down-arrow-wrapper">
+          <a href="#about" class="down-arrow">ⱽ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+     <section id="about" class="about-section">
+  <div class="overlay-text">ABOUT</div>
+  <div class="container">
+    <div class="about-header">
+      <h2 class="section-title">Know Me More</h2>
+    </div>
+
+    <div class="about-content">
+      <div class="about-left">
+        <h3>I'm <span class="highlighted">Shahaza Fathima</span>, a Web Developer</h3>
+        <p>I help build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with my dedicated team.</p>
+        <p>Delivering work within time and budget which meets client’s requirements is my motto. I love crafting unique, responsive websites that make a difference.</p>
+      </div>
+
+      <div class="about-right">
+        <ul>
+          <li><strong>Name:</strong> Shahaza Fathima</li>
+          <li><strong>Email:</strong> <a href="mailto:shahaza@example.com">sshahazafathima@gmail.com</a></li>
+          <li><strong>Age:</strong> 22</li>
+          <li><strong>From:</strong> Kerala, India</li>
+        </ul>
+        <a href="Shahaza_Fathima_Resume.pdf" class="download-btn" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="about-stats">
+      <div class="stat"><h3 class="count" data-target="0">0</h3><p>Years Experience</p></div>
+      <div class="stat"><h3 class="count" data-target="7">0</h3><p>Happy Clients</p></div>
+      <div class="stat"><h3 class="count" data-target="18">0</h3><p>Projects Done</p></div>
+      <div class="stat"><h3 class="count" data-target="39">0</h3><p>Certificates</p></div>
+    </div>
+  </div>
+</section>
+<script>
+     document.addEventListener("DOMContentLoaded", () => {
+   
+  const counters = document.querySelectorAll('.count');
+
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = target / 50;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;// + (target > 0 ? '+' : '');
+      }
+    };
+
+    updateCount();
+  });
+});
+</script>
+
+   <!--Services Section -->
+   
+    <section id="services" class="services">
+  <h2 class="section-title">What I Do?</h2>
+  <div class="services-container">
+    <div class="service-box">
+      <i class="icon">🎨</i>
+      <h3>Technical Projects</h3>
+      <p>Creative visuals and branding to boost your identity and presence.</p>
+    </div>
+    <div class="service-box">
+      <i class="icon">💻</i>
+      <h3>Web Development</h3>
+      <p>Responsive, aesthetic designs optimized for all devices.</p>
+    </div>
+    <div class="service-box">
+      <i class="icon">🧩</i>
+      <h3>Soft Skills</h3>
+      <p>Balancing messaging and personal growth with maturity.</p>
+    </div>
+    <div class="service-box">
+      <i class="icon">🛠️</i>
+      <h3>Professional Outreach</h3>
+      <p>One-page, keyword-optimized format without photo</p>
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- Skills Section -->
+ <section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill">
+    <span>PHP & MySQL</span><span>75%</span>
+    <div class="bar" style="--skill-level: 75%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>HTML/CSS</span><span>85%</span>
+    <div class="bar" style="--skill-level: 85%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>JavaScript</span><span>60%</span>
+    <div class="bar" style="--skill-level: 60%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>React JS</span><span>40%</span>
+    <div class="bar" style="--skill-level: 40%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Python</span><span>50%</span>
+    <div class="bar" style="--skill-level: 50%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Bootstrap</span><span>90%</span>
+    <div class="bar" style="--skill-level: 90%;"><div></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Git & GitHub</span><span>50%</span>
+    <div class="bar" style="--skill-level: 50%;"><div></div></div>
+  </div>
+</section>
+
+
+  <!-- Portfolio Section -->
+  
+  <section id="portfolio">
+  <div class="section-heading">
+    <h2>My Work</h2>
+    <div class="underline"></div>
+  </div>
+      
+     <div class="portfolio-grid">
+  <div class="project-card">
+    <h3>Hostel Management System</h3>
+    <p>PHP, MySQL, Bootstrap</p>
+    <div class="links">
+      <a href="#">Live Demo</a>
+      <a href="#">View Code</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Poster Generator Web App</h3>
+    <p>HTML, CSS, and JavaScript</p>
+    <div class="links">
+      <a href="poster-gallery.html" onclick="window.location.href=this.href; return true;" target="_blank">Live Demo</a>
+
+      <div class="links">
+      <a href="poster-code.html" onclick="window.location.href=this.href; return true;" target="_blank">View Code</a>
+
+    </div>
+  </div>
+
+  <!-- Add more cards similarly -->
+</div>
+
+
+
+  <!-- Resume Section -->
+  <section class="resume-section" id="resume">
+    <h1 class="resume-heading">Resume</h1>
+
+    <div class="resume-content">
+      <div class="resume-column">
+        <h2>My Education</h2>
+
+        <div class="resume-card">
+          <span class="year">2022 - 2026</span>
+          <h3>Bachelor of Technology in Computer Science and Engineering (B.Tech CSE)</h3>
+          <h4>LBS Institute of Technology for Women, APJ Abdul Kalam Technological University (KTU)</h4>
+          <p>Data Structures, Web Development, Compiler Design, Python, DBMS</p>
+        </div>
+
+        <div class="resume-card">
+          <span class="year">2019 - 2021</span>
+          <h3>Higher Secondary Education</h3>
+          <h4>PTM HSS, Kerala State Board</h4>
+          <p>Biology Mathematics</p>
+        </div>
+
+        <div class="resume-card">
+          <span class="year">2009 - 2019</span>
+          <h3>SSLC</h3>
+          <h4>Mahlara Public School, CBSEy</h4>
+          <p>The school emphasizes both academic excellence and character development, offering a strong foundation in core subjects and co-curricular activities.</p>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Contact Section -->
+    
+  <!-- Contact Section -->
+   <section id="contact" class="contact-section">
+
+  <h2 class="section-heading">Get in Touch</h2>
+
+  <div class="contact-container">
+    
+    <!-- Left Column: Address and Social Links -->
+    <div class="contact-info">
+      <h3>ADDRESS</h3>
+      <p>Purayi (H) <br>
+      Alungal, Cheruvadi (po)<br>
+      Mavoor, Kozhikode</p>
+      <p><i class="fa fa-phone"></i>+91 7994236588</p>
+      <p><i class="fa fa-envelope"></i>sshahazafathima@gmail.com</p>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <div class="contact-form">
+      <h3>SEND US A NOTE</h3>
+      <form id="contactForm">
+        <div class="input-row">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <textarea placeholder="Tell us more about your needs........" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Thank You Message Container -->
+      <div id="thank-you-message" style="display:none; color:#1abc9c; font-size: 18px; margin-top: 20px;">
+        ✅ Thank you for contacting us! We'll get back to you soon.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+     
+<script>
+  const form = document.getElementById('contactForm');
+  const thankYouMsg = document.getElementById('thank-you-message');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop actual submission
+    form.style.display = 'none'; // Hide form
+    thankYouMsg.style.display = 'block'; // Show thank-you message
+  });
+</script>
+
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".bar");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animated");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    bars.forEach(bar => observer.observe(bar));
+  });
+</script>
+
+<script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", (e) => {
+      console.log("Clicked:", link.href);
+    });
+  });
+</script>
+
+
+</body>
+</html>
